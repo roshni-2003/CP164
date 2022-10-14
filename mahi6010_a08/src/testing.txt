@@ -1,0 +1,261 @@
+
+-------------------------------------------------------
+Assignment 8  Testing
+-------------------------------------------------------
+Author  Nicolas Mills
+ID      180856100
+Email   mill6100@mylaurier.ca
+Version 2019-02-22
+-------------------------------------------------------
+
+-------------------------------------------------------
+Task 1
+-------------------------------------------------------
+Testing BST#is_balanced
+
+
+Empty tree
+Contents: []
+Balanced? True
+Expected: True
+
+
+Non-empty tree not balanced
+Contents: [11, 9, 22, 33, 25, 44]
+Balanced? False
+Expected: False
+
+
+Non-empty tree balanced
+Contents: [7, 5, 11, 4, 6, 9, 15]
+Balanced? True
+Expected: True
+
+
+Testing BST#is_valid
+
+
+Empty bst
+Contents: []
+Valid? True
+Expected: True
+
+
+Non-empty bst valid
+Contents: [11, 8, 15, 6, 18, 0, 7]
+Valid? True
+Expected: True
+
+
+Testing BST#is_identical
+
+
+Empty bsts
+First contents: []
+Other contents: []
+Identical? True
+Expected: True
+
+
+First BST empty, other non-empty
+First contents: []
+Other contents: [7, 3, 9, 1, 4]
+Identical? False
+Expected: False
+
+
+First BST non-empty, other empty
+First contents: [7, 3, 9, 1, 4]
+Other contents: []
+Identical? False
+Expected: False
+
+
+Both non-empty, identical
+First contents: [7, 3, 9, 1, 4]
+Other contents: [7, 3, 9, 1, 4]
+Identical? True
+Expected: True
+
+
+Testing BST#min
+
+
+Empty bst
+Contents: []
+Cannot find min of empty bst, assertion thrown correctly.
+
+
+Non-empty bst
+Contents: [7, 3, 9, 2, 5, 4]
+Returned min value: 2
+Expected: 2
+
+
+Testing BST#leaf_count
+
+
+Empty bst
+Contents: []
+Leaf count: 0
+Expected: 0
+
+
+Non-empty bst, 1 leaf
+Contents: [7]
+Leaf count: 1
+Expected: 1
+
+
+Non-empty bst, more than 1 leaf
+Contents: [7, 4, 9, 3, 5, 10]
+Leaf count: 3
+Expected: 3
+
+
+Testing BST#one_child_count
+
+
+Empty BST
+Contents: []
+Num nodes w/ one child: 0
+Expected: 0
+
+
+Non-empty BST
+Contents: [7, 4, 15, 3, 5, 18, 1, 16]
+Num nodes w/ one child: 3
+Expected: 3
+
+
+Testing BST#two_child_count
+
+
+Empty BST
+Contents: []
+Num nodes w/ one child: 0
+Expected: 0
+
+
+Non-empty BST
+Contents: [7, 4, 15, 3, 5, 18, 1, 16]
+Num nodes w/ one child: 2
+Expected: 2
+
+
+Testing BST#inorder
+
+
+Empty bst
+Contents: []
+Inorder: []
+
+
+Non-empty bst
+Contents: [7, 4, 15, 2, 6, 14, 18, 1, 3, 5]
+Inorder: [1, 2, 3, 4, 5, 6, 7, 14, 15, 18]
+
+
+Testing BST#preorder
+
+
+Empty bst
+Contents: []
+Preorder: []
+
+
+Non-empty bst
+Contents: [7, 4, 15, 2, 6, 14, 18, 1, 3, 5]
+Preorder: [7, 4, 2, 1, 3, 6, 5, 15, 14, 18]
+
+
+Testing BST#postorder
+
+
+Empty bst
+Contents: []
+Postorder: []
+
+
+Non-empty bst
+Contents: [7, 4, 15, 2, 6, 14, 18, 1, 3, 5]
+Postorder: [1, 3, 2, 5, 6, 4, 14, 18, 15, 7]
+
+
+Testing BST#levelorder
+
+
+Empty bst
+Contents: []
+Levelorder: []
+
+
+Non-empty bst
+Contents: [7, 4, 15, 2, 6, 14, 18, 1, 3, 5]
+Levelorder: [7, 4, 15, 2, 6, 14, 18, 1, 3, 5]
+
+
+Testing BST#remove
+
+
+Empty bst
+Contents: []
+Key: 4
+Removed: None
+
+
+Non-empty bst, key exists
+Contents: [7, 3, 15, 2, 4, 11, 18]
+Key: 4
+Removed: 4
+
+
+Non-empty bst, key does not exist
+Contents: [7, 3, 15, 2, 4, 11, 18]
+Key: 4
+Removed: None
+
+-------------------------------------------------------
+Task 2
+-------------------------------------------------------
+DATA1 BST: 12670103
+DATA2 BST: 3536853
+DATA3 BST: 3280726
+
+-------------------------------------------------------
+Task 3
+-------------------------------------------------------
+DATA3 BST: 3280726
+
+Letter Count/Percent Table
+Total Count: 1009510
+Letter  Count       %
+---------------------
+    A 80594     7.98%
+    B 17018     1.69%
+    C 35365     3.50%
+    D 37400     3.70%
+    E 133050    13.18%
+    F 28024     2.78%
+    G 18383     1.82%
+    H 50361     4.99%
+    I 75010     7.43%
+    J 687     0.07%
+    K 3708     0.37%
+    L 42326     4.19%
+    M 25356     2.51%
+    N 72360     7.17%
+    O 72839     7.22%
+    P 19126     1.89%
+    Q 925     0.09%
+    R 63281     6.27%
+    S 69419     6.88%
+    T 90909     9.01%
+    U 25796     2.56%
+    V 11978     1.19%
+    W 16173     1.60%
+    X 2428     0.24%
+    Y 16525     1.64%
+    Z 469     0.05%
+
+-------------------------------------------------------

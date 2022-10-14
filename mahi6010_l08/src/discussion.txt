@@ -1,0 +1,107 @@
+data1: In order by letters
+--------------------------------------------------------------------
+A
+ \
+  B
+   \
+    C
+     \
+      D
+       \
+        E
+         \
+          F
+           \
+            G
+             \
+              H
+               \
+                I
+                 \
+                  J
+                   \
+                    K
+                     \
+                      L
+                       \
+                        M
+                         \
+                          N
+                           \
+                            O
+                             \
+                              P
+                               \
+                                Q
+                                 \
+                                  R
+                                   \
+                                    S
+                                     \
+                                      T
+                                       \
+                                        U
+                                         \
+                                          V
+                                           \
+                                            W
+                                             \
+                                              X
+                                               \
+                                                Y
+                                                 \
+                                                  Z
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+data2: In order by splitting
+--------------------------------------------------------------------
+                     M
+         /------------|------------\
+        F                           T
+   /----|----\            /---------|---------\
+  C           J          P                     W
+ / \        /-|-\     /--|--\             /----|----\
+A   D      H     K   O       R           U           Y
+ \   \    / \   / \       /--|--\         \      /---|---\
+  B   E  G   I L   N     Q       S         V    X         Z
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+data3: In order by popularity
+--------------------------------------------------------------------
+            E
+   /--------|--------\
+  A                   T
+   \              /---|---\
+    D            O         U
+   /         /---|---\      \
+  C         I         S      Y
+ /       /--|--\     /      / \
+B       H       N   R      W   Z
+       /       /   /      / \
+      F       L   P      V   X
+       \     / \  \
+        G   K   M  Q
+           /
+          J
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Question: Which of these three is the most inefficient 
+          tree? Why?
+          
+Answer: The most inefficient tree would be the data1, or 
+        the tree in order by letters. This is because 
+        the tree has the most levels, even though it is 
+        linear. The other trees have complexity O(log n), 
+        which has a better efficiency than O(n). 
+
+Question: Which of these is likely to be the most 
+          efficient tree? How could you (theoretically) 
+          figure that out?
+
+Answer: The most efficient would be the data2,
+		or the tree in order by splitting. This is 
+		because the tree has the least levels of the 3 
+		trees. It's complexity is O(log n). However, data3 
+		would be the most efficient if only dealing with 
+		English text.
+        
